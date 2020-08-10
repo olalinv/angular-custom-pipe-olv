@@ -1,0 +1,9 @@
+<hello name="{{ name }}"></hello>
+
+<p>Edita el texto:</p>
+
+<input [(ngModel)]="text" (ngModelChange)="text=$event">
+
+<p>Con el pipe:</p>
+
+<input ngModel="{{ text | urlFormatter }}" disabled>
